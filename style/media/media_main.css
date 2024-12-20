@@ -1,0 +1,27 @@
+@media (max-width: 750px) {
+    #portfolio section .description{
+        display: none;
+    }
+    #portfolio section {
+        display: block;
+    }
+    #portfolio .work_1 {
+    grid-template-columns: repeat(auto-fit,minmax(129px,1fr));
+    }
+    main article div {
+        grid-template-columns: repeat(auto-fit,minmax(138px,1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    main .mobile_contact {
+        display: flex;
+    }
+    main .desctop_contact {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    
+}

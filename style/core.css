@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+body{
+   font-family: Verdana, Arial, Tahoma;
+   font-size: 1.4vw;
+}
+
+h1, h3{
+    letter-spacing: 1vw;
+    font-style: italic;
+    color: #d5ef02;
+    text-align: center;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    line-height: 1;
+    position: relative;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #9ddc63;
+}
+
+a:hover,a:focus {
+    outline: none;
+}
+
+ul{
+    list-style: none;
+}
+
+ input[type='checkbox'],
+ input[type='radio'] {
+    display: none
+}

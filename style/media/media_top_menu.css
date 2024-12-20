@@ -1,0 +1,60 @@
+@media (max-width: 480px){
+    header #top_menu{
+        background: rgba(33,33,33,0.7);
+        min-height: 9vw;
+    }
+    header #top_menu nav ul{
+        display: none;
+    }
+    header .menu_btn {
+        display: flex;
+        align-items: center;
+        width: 7vw;
+        height: 7vw;
+        margin: 1vw 0;
+        cursor: pointer;
+        position: absolute;
+        right: 5%;
+        z-index: 100;
+        
+    }
+    header .menu_btn>span,
+    header .menu_btn>span::before,
+    header .menu_btn>span::after{
+        display: block;
+        position: absolute;
+        width: inherit;
+        height: 2px;
+        background-color: #fff;
+    }
+    header .menu_btn>span::before{
+        content:'';
+        top: -8px;
+    }
+
+    header .menu_btn>span::after{
+        content:'';
+        top: 8px;
+    }
+    #check_menu:checked ~ .menu_btn > span {
+        transform: rotate(45deg);
+    }
+    #check_menu:checked ~ .menu_btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #check_menu:checked ~ .menu_btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #check_menu:checked ~  nav ul {
+        display: block;
+        text-align: center;
+        padding: 5vw 0 1vw; 
+    }
+    .menu_btn > span,
+    .menu_btn > span::before,
+    .menu_btn > span::after {
+        transition-duration: .5s;
+    }
+}

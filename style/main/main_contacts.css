@@ -1,0 +1,35 @@
+main #contacts>div{
+    display: block;
+}
+
+main #contacts section {
+    border: none;
+}
+
+main .contact {
+    display: inline-block;
+    text-align: center;
+    text-indent: 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main figcaption p{
+    user-select: text;
+}
+
+main  .desctop_contact figure {
+    text-align: center;
+}
+
+main  .desctop_contact {
+    display: flex;
+    justify-content: space-around;
+}
+
+main  .mobile_contact {
+    display: none;
+    text-align: center;
+}
+

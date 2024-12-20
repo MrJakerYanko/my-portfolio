@@ -1,0 +1,14 @@
+@media (min-width: 1300px) {
+    body {
+        font-size: 1vw;
+    }
+    footer #footer_top {
+        grid-gap:1vw;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 3vw;
+    }
+}

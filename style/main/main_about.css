@@ -1,0 +1,210 @@
+main #about .about {
+    display: grid;
+    grid-template-columns: 30vw 1fr;
+    align-items: center;
+}
+
+main #about picture {
+    margin: 1vw auto;
+    width: 90%;
+}
+
+main #skills picture {
+    justify-content: center;
+    display: grid;
+
+}
+
+main #about picture img{
+    width: 100%;
+}
+
+main #about #about_me {
+    margin: 5vw 1vw;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main #about #about_me h2 {
+    color: #fff;
+}
+
+main #about a {
+    position: relative;
+    left: 50%;
+    margin: 2vw 0 0;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+main #about #skills section {
+    padding: 0;
+    border: none;
+}
+
+main #about #skills section div {
+    margin-bottom: 0;
+}
+
+main #about #skills .section {
+    background: #fff;
+    display: grid;
+    align-content: center;
+    height: 100%;
+    border: none;
+    border-radius: 1vw;
+    color: #000;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -moz-transition:1s;
+    -webkit-transition:1s;
+    transition:1s;
+}
+
+main #about #skills section .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 3vw;
+    width: 3vw;
+    z-index:90;
+    font-weight: bold;
+    opacity: 0.3; 
+}
+
+main #about #skills section .close:hover {
+    opacity: 1; 
+}
+
+main #about #skills section .close::after,
+main #about #skills section .close::before {
+    position: absolute;
+    left: 1.5vw;
+    content: '';
+    height: 3vw;
+    width: 2px;
+    background-color: #333;
+}
+
+main #about #skills section .close::after {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+main #about #skills section .close::before {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+main #about #skills input+label {
+    opacity: 0;
+}
+
+main #about #skills input:checked+label {
+    opacity: 1;
+    -webkit-transition: all 2s ease-in-out 2s;
+    -moz-transition: all 2s ease-in-out 2s;
+    transition: all 2s ease-in-out 2s;
+    cursor: pointer;
+}
+
+main #about #skills input:checked+label+.section{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+main #about #skills section .front,
+main #about #skills section .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+main #about #skills section .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 1vw;
+    padding: 1vw;
+    background: #fff;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+main #about #skills section .back h4{
+    padding-right: 3vw;
+}
+
+main #about #skills section .front::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    left: 0;
+    top: 0;
+    border-radius: 1vw;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+main #about #skills section .front:hover::after{
+    opacity: 1;
+    -moz-transform: opacity 1s ease;
+    -webkit-transform: opacity 1s ease;
+    transition: opacity 1s ease;
+}
+
+main #about #skills p {
+    color: #000;
+    margin: 0;
+    text-indent: 0;
+    font-size: 90%;
+}
+
+main #about #skills span {
+    position: absolute;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+    top: 0;
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: #fff;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+}
+
+main #about #skills .front:hover span{
+    opacity: 1;
+    -webkit-transform: opacity 2s ease-in-out;
+    -moz-transform: opacity 2s ease-in-out;
+    transition: opacity 2s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}

@@ -1,0 +1,95 @@
+#portfolio {
+    color: #fff;
+}
+
+#portfolio label {
+    display: inline-block;
+    padding: 2vw;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#portfolio label:hover {
+    color: #337AB7;
+}
+
+#portfolio .portfolio_work {
+    display: none;
+}
+
+#portfolio input:checked+article {
+    display: block;
+}
+
+#portfolio section {
+    display: grid;
+    grid-template-columns: 25vw 1fr;
+    align-items: center;
+}
+
+#portfolio section img {
+    width: 100%;
+}
+
+#portfolio h2 {
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+#portfolio .work_1 {
+    grid-template-columns: 1fr;
+}
+
+#portfolio .portfolio_index section{
+    display: block;
+}
+
+#portfolio .portfolio_index {
+    grid-template-columns: repeat(auto-fit,minmax(20vw,1fr));
+}
+
+#portfolio section .work {
+    position: relative;
+    overflow: hidden;
+}
+
+#portfolio div{
+    margin-bottom: 0;
+}
+
+#portfolio section .work .button_free {
+    position: absolute;
+    bottom: -23%;
+    left: 0;
+    padding: 10% 0;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
+
+#portfolio section .work:hover .button_free {
+    bottom: 0;
+    transition: all 1s ease-in-out;
+}
+
+#portfolio section .description {
+    padding: 0 2vw;
+    display: block;
+}
+
+#portfolio section .description a {
+    margin: 4vw 2vw 0;
+}
+
+#portfolio section .description span {
+    font-weight: 600;
+}
+
+#portfolio .more {
+    text-align: center;
+}
+
+#portfolio .more a {
+    margin: 2vw 0;
+}
